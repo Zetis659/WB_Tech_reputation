@@ -46,5 +46,6 @@ prob = response_json['prob']
 
 print(f'{prob}, {verdict}')
 ```
+Добавлены 3 модели YOLO + распознавание слов с помощью easyOCR c разными порогами.
 
    
