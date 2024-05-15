@@ -10,8 +10,8 @@
 
 ## Install
 ```bash
-   git clone https://github.com/your_username/your_repository.git
-   cd your_repository
+   git clone https://github.com/Zetis659/WB_Tech_reputation.git
+   cd WB_Tech_reputation
    docker-compose up --build
 ```
 
@@ -34,17 +34,17 @@ urls = {
     'yolo_v3': 'http://127.0.0.1:5000/process_image_v3',
 }
 
-img = Image.open("imgs/img1.jpg")
+img = Image.open('imgs/img1.jpg')
 
 img_bytes = image_to_byte_array(img)
 
-resp = requests.post(urls["yolo_v1"], data=img_bytes)
+resp = requests.post(urls['yolo_v1'], data=img_bytes)
 
 response_json = resp.json()
 verdict = response_json['verdict']
 prob = response_json['prob']
 
-print(f"{prob}, {verdict}")
+print(f'{prob}, {verdict}')
 ```
 
    
