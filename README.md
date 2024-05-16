@@ -48,4 +48,27 @@ print(f'{prob}, {verdict}')
 ```
 Добавлены 3 модели YOLO + распознавание слов с помощью easyOCR c разными порогами.
 
-   
+### Structure
+```
+WB_Tech_reputation/
+│
+├── app/
+│   ├── __init__.py
+│   ├── flask_server.py
+│   ├── model_loader.py
+│   └── models/
+│       ├── yolo_model_v1.py
+│       ├── yolo_model_v2.py
+│       └── yolo_model_v3.py
+├── client/
+│   └── client.py
+├── imgs/
+│   └── img1.jpg
+├── models/
+│   ├── yolo_model.pt
+│   └── fraud_words.txt
+├── main.py
+├── requirements.txt
+├── Dockerfile
+└── docker-compose.yml
+```
